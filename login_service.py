@@ -113,5 +113,17 @@ def login():
     result = perform_login(username, password)
     return jsonify(result)
 
+@app.route('/', methods=['GET'])
+def home():
+    return """
+    <h2>ERP Login Microservice</h2>
+    <p>This microservice allows you to verify ERP login credentials via the official PSIT ERP portal.</p>
+    <p><b>GET Example:</b> <a href="/login?username=22016XXXXXXXX&password=abcdefgh">/login?username=...&password=...</a></p>
+    <p><b>POST Example:</b> Send JSON { "username": "...", "password": "..." } to <code>/login</code>.</p>
+    <p>Source: PSIT ERP scraping microservice to verify login credentials.</p>
+    <p><b>Note:</b> POST method is recommended for better security as it keeps credentials out of the URL.</p>
+    """
+
+
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
