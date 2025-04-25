@@ -78,14 +78,14 @@ def parse_student_details(html: str) -> dict:
         return match.group(1).strip() if match else None
 
     fields = {
-        "local_address": "Local Address",
-        "permanent_address": "Permanent Address",
-        "mobile_no": "Mobile No",
-        "birth_date": "Birth Date",
+        "localAddress": "Local Address",
+        "permanentAddress": "Permanent Address",
+        "mobile": "Mobile No",
+        "birthDate": "Birth Date",
         "branch": "Branch",
         "section": "Section",
-        "university_roll_no": "University Roll No",
-        "library_code": "Library Code",
+        "roll": "University Roll No",
+        "libraryCode": "Library Code",
         "email": "Email"
     }
 

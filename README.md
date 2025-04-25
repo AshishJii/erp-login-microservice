@@ -46,16 +46,16 @@ Content-Type: application/json
 {
   "status": "success",
   "data": {
-    "birth_date": "MM-DD-YYYY",
-    "branch": "Branch Name",
-    "email": "user@example.com",
-    "library_code": "XXXXXXX",
-    "local_address": "Address Line 1, Area",
-    "mobile_no": "XXXXXXXXXX",
     "name": "Student Name",
-    "permanent_address": "Address Line 1, Area",
+    "roll": "XXXXXXXXXXXX",
+    "branch": "Branch Name",
     "section": "Section Name",
-    "university_roll_no": "XXXXXXXXXXXX"
+    "email": "user@example.com",
+    "mobile": "XXXXXXXXXX",
+    "birthDate": "MM-DD-YYYY",
+    "libraryCode": "XXXXXXX",
+    "localAddress": "Address Line 1, Area",
+    "permanentAddress": "Address Line 1, Area"
   }
 }
 ```
