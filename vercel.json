@@ -1,14 +1,20 @@
 {
     "builds": [
-        {
-            "src": "login_service.py",
-            "use": "@vercel/python"
-        }
+      {
+        "src": "login_service.py",
+        "use": "@vercel/python"
+      }
     ],
+    "functions": {
+      "login_service.py": {
+        "maxDuration": 30
+      }
+    },
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/login_service.py"
-        }
+      {
+        "src": "/(.*)",
+        "dest": "/login_service.py"
+      }
     ]
-}
+  }
+  
